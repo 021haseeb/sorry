@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Nisha - A Heartfelt Apology</title>
+    <link rel="stylesheet" href="her.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Background Animation -->
+        <div class="bg-animation">
+            <div class="star star-1"></div>
+            <div class="star star-2"></div>
+            <div class="star star-3"></div>
+            <div class="star star-4"></div>
+            <div class="star star-5"></div>
+            <div class="star star-6"></div>
+            <div class="star star-7"></div>
+            <div class="star star-8"></div>
+        </div>
+
+        <!-- Heart Animation -->
+        <div class="heart-container">
+            <div class="heart">
+                <div class="heart-piece"></div>
+                <div class="heart-piece"></div>
+                <div class="heart-piece"></div>
+            </div>
+            <div class="heart-glow"></div>
+        </div>
+
+        <!-- Floating Hearts -->
+        <div class="floating-hearts">
+            <div class="floating-heart" style="--delay: 0s; --duration: 6s;"></div>
+            <div class="floating-heart" style="--delay: 2s; --duration: 8s;"></div>
+            <div class="floating-heart" style="--delay: 4s; --duration: 7s;"></div>
+            <div class="floating-heart" style="--delay: 1s; --duration: 9s;"></div>
+            <div class="floating-heart" style="--delay: 3s; --duration: 5s;"></div>
+        </div>
+
+        <!-- Main Message -->
+        <div class="message-container">
+            <h1 class="main-title">
+                <span class="letter" style="--delay: 0.1s">D</span>
+                <span class="letter" style="--delay: 0.2s">e</span>
+                <span class="letter" style="--delay: 0.3s">a</span>
+                <span class="letter" style="--delay: 0.4s">r</span>
+                <span class="space"></span>
+                <span class="letter nisha" style="--delay: 0.5s">N</span>
+                <span class="letter nisha" style="--delay: 0.6s">i</span>
+                <span class="letter nisha" style="--delay: 0.7s">s</span>
+                <span class="letter nisha" style="--delay: 0.8s">h</span>
+                <span class="letter nisha" style="--delay: 0.9s">a</span>
+            </h1>
+            
+            <div class="subtitle">
+                <p class="apology-text">I'm so sorry for hurting you...</p>
+                <p class="apology-text">Every moment without your smile feels like a lifetime</p>
+            </div>
+
+            <div class="flower-container">
+                <div class="flower">
+                    <div class="petal petal-1"></div>
+                    <div class="petal petal-2"></div>
+                    <div class="petal petal-3"></div>
+                    <div class="petal petal-4"></div>
+                    <div class="petal petal-5"></div>
+                    <div class="petal petal-6"></div>
+                    <div class="center"></div>
+                </div>
+            </div>
+
+            <div class="message-box">
+                <p class="personal-message">
+                    My dearest Nisha,<br><br>
+                    Words cannot express how sorry I am for the pain I've caused you. 
+                    You are the most precious person in my life, and seeing you hurt 
+                    breaks my heart into a million pieces. I promise to do everything 
+                    in my power to make this right, to be better, and to never let you 
+                    feel this way again. You deserve all the love and happiness in the world.<br><br>
+                    Please forgive me... 💝
+                </p>
+            </div>
+
+            <!-- Envelope Gallery Section -->
+            <div class="envelope-gallery">
+                <h2 class="gallery-title">Our Beautiful Memories</h2>
+                <p class="gallery-subtitle">Click on each envelope to open our precious moments together</p>
+                
+                <div class="envelopes-container">
+                    <!-- Envelope 1 -->
+                    <div class="envelope" onclick="openEnvelope(1)">
+                        <div class="envelope-body">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-content">
+                                <span class="envelope-label"></span>
+                            </div>
+                        </div>
+                        <div class="photo-popup" id="photo1">
+                            <div class="photo-frame">
+                                <div class="photo-image-container">
+                                    <img src="IMG-20210105-WA0173.jpg" alt="Our first magical meeting" class="responsive-photo">
+                                </div>
+                                <div class="photo-content">
+                                    <div class="photo-heart">💕</div>
+                                    <p>That magical day when we first met</p>
+                                    <p class="photo-date">The beginning of our beautiful journey</p>
+                                </div>
+                                <button class="close-photo" onclick="closeEnvelope(1)">×</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Envelope 2 -->
+                    <div class="envelope" onclick="openEnvelope(2)">
+                        <div class="envelope-body">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-content">
+                                <span class="envelope-label"></span>
+                            </div>
+                        </div>
+                        <div class="photo-popup" id="photo2">
+                            <div class="photo-frame">
+                                <div class="photo-image-container">
+                                    <img src="IMG-20210105-WA0181.jpg" alt="Weekend getaway memories" class="responsive-photo">
+                                </div>
+                                <div class="photo-content">
+                                    <div class="photo-heart">🌸</div>
+                                    <p>That amazing weekend getaway</p>
+                                    <p class="photo-date">When we created our first memories</p>
+                                </div>
+                                <button class="close-photo" onclick="closeEnvelope(2)">×</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Envelope 3 -->
+                    <div class="envelope" onclick="openEnvelope(3)">
+                        <div class="envelope-body">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-content">
+                                <span class="envelope-label"></span>
+                            </div>
+                        </div>
+                        <div class="photo-popup" id="photo3">
+                            <div class="photo-image-container">
+                                <img src="WhatsApp Image 2022-12-11 at 8.39.27 PM.jpeg" alt="Celebration day" class="responsive-photo">
+                            </div>
+                            <div class="photo-content">
+                                <div class="photo-heart">🎂</div>
+                                <p>The day you made my world brighter</p>
+                                <p class="photo-date">Celebrating the most beautiful person</p>
+                                <button class="close-photo" onclick="closeEnvelope(3)">×</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Envelope 4 -->
+                    <div class="envelope" onclick="openEnvelope(4)">
+                        <div class="envelope-body">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-content">
+                                <span class="envelope-label"></span>
+                            </div>
+                        </div>
+                        <div class="photo-popup" id="photo4">
+                            <div class="photo-image-container">
+                                <img src="WhatsApp Image 2023-04-27 at 9.57.47 PM.jpeg" alt="Special moment" class="responsive-photo">
+                            </div>
+                            <div class="photo-content">
+                                <div class="photo-heart">💍</div>
+                                <p>The day that changed everything</p>
+                                <p class="photo-date">When you became my everything</p>
+                                <button class="close-photo" onclick="closeEnvelope(4)">×</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Envelope 5 -->
+                    <div class="envelope" onclick="openEnvelope(5)">
+                        <div class="envelope-body">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-content">
+                                <span class="envelope-label"></span>
+                            </div>
+                        </div>
+                        <div class="photo-popup" id="photo5">
+                            <div class="photo-image-container">
+                                <img src="WhatsApp Image 2023-04-27 at 9.57.48 PM.jpeg" alt="Happy moments" class="responsive-photo">
+                            </div>
+                            <div class="photo-content">
+                                <div class="photo-heart">😊</div>
+                                <p>All those times we laughed until we cried</p>
+                                <p class="photo-date">Moments that made life beautiful</p>
+                                <button class="close-photo" onclick="closeEnvelope(5)">×</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Envelope 6 -->
+                    <div class="envelope" onclick="openEnvelope(6)">
+                        <div class="envelope-body">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-content">
+                                <span class="envelope-label">Your Beautiful Smile</span>
+                            </div>
+                        </div>
+                        <div class="photo-popup" id="photo6">
+                            <div class="photo-image-container">
+                                <img src="WhatsApp Image 2023-04-28 at 5.40.28 PM.jpeg" alt="Beautiful smile" class="responsive-photo">
+                            </div>
+                            <div class="photo-content">
+                                <div class="photo-heart">😍</div>
+                                <p>The smile that lights up my world</p>
+                                <p class="photo-date">The most beautiful sight in the universe</p>
+                                <button class="close-photo" onclick="closeEnvelope(6)">×</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="forgive-btn" onclick="showSpecialMessage()">
+                <span>Can You Forgive Me?</span>
+                <div class="btn-hearts"></div>
+            </button>
+        </div>
+
+        <!-- Special Message Overlay -->
+        <div class="special-overlay" id="specialOverlay">
+            <div class="special-content">
+                <div class="fireworks">
+                    <div class="firework firework-1"></div>
+                    <div class="firework firework-2"></div>
+                    <div class="firework firework-3"></div>
+                </div>
+                <h2 class="special-title">Thank You Nisha!</h2>
+                <p class="special-text">Your forgiveness means everything to me. I love you more than words can say.</p>
+                <div class="infinity-heart">∞</div>
+                <button class="close-btn" onclick="closeSpecialMessage()">Close</button>
+            </div>
+        </div>
+
+        <!-- Aurora Effect -->
+        <div class="aurora">
+            <div class="aurora-layer aurora-1"></div>
+            <div class="aurora-layer aurora-2"></div>
+            <div class="aurora-layer aurora-3"></div>
+        </div>
+    </div>
+
+    <script src="her.js"></script>
+</body>
+</html>
